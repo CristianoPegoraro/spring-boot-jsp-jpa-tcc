@@ -47,11 +47,6 @@ public class ConsultaController {
 		return "/consulta/lista";
 	}
 	
-	@RequestMapping(value ="/", method=RequestMethod.GET)
-	public String listadia(Model model){
-		model.addAttribute("consultasdia", consultaRepository.findAll());
-		return "/consulta/dia";
-	}
 	
 	
 	
